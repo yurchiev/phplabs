@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Інформація про навчальні предмети</title>
+    <title>Lab work #2</title>
 </head>
 <body>
 
