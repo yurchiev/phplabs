@@ -10,3 +10,39 @@
 ![image](https://github.com/yurchiev/phplabs/assets/50412211/32aecbd0-898b-4b05-958e-088e8266e3f8)
 ![image](https://github.com/yurchiev/phplabs/assets/50412211/36296b65-d1b1-4739-b5f1-a3b80a0ec0fc)
 ![image](https://github.com/yurchiev/phplabs/assets/50412211/57bfa3b9-c9d9-4087-8732-dd66663d950d)
+-- Створення таблиці викладачів
+CREATE TABLE IF NOT EXISTS Lecturers (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    lecturer_name VARCHAR(100) NOT NULL
+);
+
+-- Додавання даних про викладачів
+INSERT INTO Lecturers (lecturer_name)
+VALUES 
+('Скутар Ігор'),
+('Сопронюк Тетяна'),
+('Романенко Наталія'),
+('Шепетюк Богдан'),
+('Мельник Галина'),
+('Бігун Ярослав');
+
+-- Створення таблиці предметів
+CREATE TABLE IF NOT EXISTS Subjects (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    subject_name VARCHAR(100) NOT NULL,
+    semester_number INT(2) NOT NULL,
+    hours INT(3) NOT NULL,
+    assessment_type VARCHAR(50) NOT NULL,
+    lecturer_id INT(6) UNSIGNED,
+    FOREIGN KEY (lecturer_id) REFERENCES Lecturers(id)
+);
+
+-- Додавання даних про предмети
+INSERT INTO Subjects (subject_name, semester_number, hours, assessment_type, lecturer_id)
+VALUES 
+('Серверна мова програмування PHP', 1, 150, 'Екзамен', 1),
+('Системне програмування', 2, 120, 'Екзамен', 2),
+('Проектування програмних систем', 3, 130, 'Залік', 3),
+('Теорія інформації та кодування', 5, 120, 'Залік', 4),
+('Платформи корпоративних інформаційних систем', 4, 110, 'Залік', 5),
+('Числові методи', 6, 120, 'Залік', 6);
