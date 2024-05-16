@@ -10,6 +10,8 @@
 ![image](https://github.com/yurchiev/phplabs/assets/50412211/32aecbd0-898b-4b05-958e-088e8266e3f8)
 ![image](https://github.com/yurchiev/phplabs/assets/50412211/36296b65-d1b1-4739-b5f1-a3b80a0ec0fc)
 ![image](https://github.com/yurchiev/phplabs/assets/50412211/57bfa3b9-c9d9-4087-8732-dd66663d950d)
+![image](https://github.com/yurchiev/phplabs/assets/50412211/16c02e1a-1f05-4892-8575-0312f5aaee0c)
+
 -- Створення таблиці викладачів
 CREATE TABLE IF NOT EXISTS Lecturers (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
