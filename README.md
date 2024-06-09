@@ -48,3 +48,11 @@ VALUES
 ('Теорія інформації та кодування', 5, 120, 'Залік', 4),
 ('Платформи корпоративних інформаційних систем', 4, 110, 'Залік', 5),
 ('Числові методи', 6, 120, 'Залік', 6);
+
+
+LAB 10:
+![image](https://github.com/yurchiev/phplabs/assets/50412211/aff7e272-cff0-450d-a64b-260400e7d891)
+![image](https://github.com/yurchiev/phplabs/assets/50412211/83f81907-1b38-4781-8222-8881db4eb0b1)
+![image](https://github.com/yurchiev/phplabs/assets/50412211/b18c1ecf-3950-48ad-aecb-b13c295c891b)
+
+
